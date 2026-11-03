@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complexe Scolaire La Colombe | Excellence & Discipline</title>
+<meta name="description" content="Complexe Scolaire La Colombe : maternelle, primaire, secondaire (humanités) et section médicale ITM. Inscriptions ouvertes. Contactez-nous sur WhatsApp.">
+<meta name="theme-color" content="#1e3a8a">
+<meta property="og:title" content="Complexe Scolaire La Colombe">
+<meta property="og:description" content="Discipline, excellence et formation pratique, de la maternelle aux humanités et à l'ITM.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/logo-colombe.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{brand:{50:'#f0f7ff',100:'#e0effe',200:'#bfdbfe',500:'#2563eb',600:'#1d4ed8',700:'#1e40af',800:'#1e3a8a',900:'#172554'},gold:{400:'#fbbf24',500:'#f59e0b',600:'#d97706'}},fontFamily:{sans:['Inter','sans-serif'],heading:['Outfit','sans-serif']}}}}
+</script>
+<style>
+.glass-panel{background:rgba(255,255,255,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.5)}
+.dark-glass{background:rgba(15,23,42,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1)}
+.hero-gradient{background:radial-gradient(circle at top right,rgba(37,99,235,.12),transparent 45%),radial-gradient(circle at bottom left,rgba(245,158,11,.12),transparent 45%)}
+.text-gradient{background:linear-gradient(135deg,#1d4ed8 0%,#f59e0b 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.animate-float{animation:float 4s ease-in-out infinite}
+.card-item{transition:opacity .3s,transform .3s}
+.card-item.hidden-card{display:none}
+.filter-btn.active{background:#1d4ed8;color:#fff}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.animate-float{animation:none}html{scroll-behavior:auto}}
+section[id]{scroll-margin-top:90px}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+<!-- Barre de contact -->
+<div class="bg-brand-900 text-slate-200 text-xs py-2 px-4 hidden sm:block">
+ <div class="max-w-7xl mx-auto flex justify-between items-center">
+  <div class="flex items-center space-x-6">
+   <a href="mailto:cslacolombe10@gmail.com" class="hover:text-gold-400 flex items-center gap-2"><i class="fa-solid fa-envelope text-gold-400"></i> cslacolombe10@gmail.com</a>
+   <a href="https://wa.me/243975701869?text=Bonjour%20Complexe%20Scolaire%20La%20Colombe,%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener" class="hover:text-emerald-400 flex items-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-500"></i> +243 975 701 869</a>
+  </div>
+  <a href="https://www.facebook.com/search/top?q=Mardoch%C3%A9e%20musa" target="_blank" rel="noopener" class="hover:text-gold-400 flex items-center gap-1.5"><i class="fa-brands fa-facebook text-blue-400"></i> Facebook : <span class="font-semibold text-white">Mardochée musa</span></a>
+ </div>
+</div>
+
+<!-- Navigation -->
+<header class="fixed top-0 sm:top-8 left-0 right-0 z-50 py-3">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="glass-panel rounded-2xl px-5 py-3 flex items-center justify-between shadow-lg">
+   <a href="#hero" class="flex items-center gap-3" aria-label="Accueil">
+    <div class="w-11 h-11 rounded-xl bg-white border border-brand-100 flex items-center justify-center shadow-md"><img src="images/logo-colombe.png" alt="Logo La Colombe" class="w-9 h-9 object-contain"></div>
+    <div><span class="font-heading font-extrabold text-lg sm:text-xl text-slate-900 block leading-tight">C.S. LA COLOMBE</span><span class="text-[10px] uppercase font-bold tracking-widest text-brand-600 block">Complexe Scolaire</span></div>
+   </a>
+   <nav class="hidden md:flex items-center space-x-7 font-medium text-slate-700 text-sm" aria-label="Menu principal">
+    <a href="#hero" class="hover:text-brand-600">Accueil</a><a href="#about" class="hover:text-brand-600">Présentation</a><a href="#sections" class="hover:text-brand-600">Nos sections</a><a href="#why-us" class="hover:text-brand-600">Atouts</a><a href="#galerie" class="hover:text-brand-600">Galerie</a><a href="#inscription" class="hover:text-brand-600">Inscription</a><a href="#contact" class="hover:text-brand-600">Contact</a>
+   </nav>
+   <a href="https://wa.me/243975701869?text=Bonjour,%20je%20souhaite%20inscrire%20mon%20enfant%20au%20Complexe%20Scolaire%20La%20Colombe." target="_blank" rel="noopener" class="hidden md:flex bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl text-sm font-semibold shadow-md items-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Inscrire un élève</a>
+   <button id="menu-btn" class="md:hidden text-slate-700 p-2" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fa-solid fa-bars text-2xl"></i></button>
+  </div>
+ </div>
+ <div id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto px-4 mt-2">
+  <div class="glass-panel rounded-2xl p-6 flex flex-col space-y-4 font-medium text-slate-800 shadow-2xl">
+   <a href="#hero" class="m-link py-1">Accueil</a><a href="#about" class="m-link py-1">Présentation</a><a href="#sections" class="m-link py-1">Nos sections</a><a href="#why-us" class="m-link py-1">Atouts</a><a href="#galerie" class="m-link py-1">Galerie</a><a href="#inscription" class="m-link py-1">Inscription</a><a href="#contact" class="m-link py-1">Contact</a>
+   <div class="pt-3 border-t border-slate-200 flex flex-col gap-2">
+    <a href="https://wa.me/243975701869?text=Bonjour,%20je%20souhaite%20inscrire%20un%20élève." target="_blank" rel="noopener" class="text-center bg-emerald-600 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Inscription par WhatsApp</a>
+    <a href="mailto:cslacolombe10@gmail.com" class="text-center bg-brand-700 text-white py-2.5 rounded-xl text-sm"><i class="fa-solid fa-envelope mr-1"></i> cslacolombe10@gmail.com</a>
+   </div>
+  </div>
+ </div>
+</header>
+
+<!-- Accueil -->
+<section id="hero" class="relative min-h-screen pt-36 pb-20 flex items-center hero-gradient overflow-hidden">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+  <div class="grid lg:grid-cols-2 gap-12 items-center">
+   <div class="space-y-8 text-center lg:text-left">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold shadow-sm"><i class="fa-solid fa-award text-gold-500"></i> Inscriptions ouvertes : Maternelle, Primaire, Secondaire et ITM</div>
+    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">Construisons l'avenir de vos enfants avec <span class="text-gradient">discipline et excellence</span>.</h1>
+    <p class="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">Le <strong>Complexe Scolaire La Colombe</strong> accompagne chaque élève de la maternelle aux humanités spécialisées, jusqu'à la formation médicale (ITM).</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+     <a href="https://wa.me/243975701869?text=Bonjour%20Complexe%20Scolaire%20La%20Colombe,%20je%20souhaite%20obtenir%20des%20informations%20d'inscription." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg flex items-center justify-center gap-3"><i class="fa-brands fa-whatsapp text-2xl"></i> Nous contacter sur WhatsApp</a>
+     <a href="#sections" class="glass-panel hover:bg-white text-slate-800 border border-slate-300 px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2">Voir nos sections <i class="fa-solid fa-arrow-down text-sm"></i></a>
+    </div>
+    <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-1 text-slate-600 text-sm">
+     <span>Suivez notre actualité :</span>
+     <a href="https://www.facebook.com/search/top?q=Mardoch%C3%A9e%20musa" target="_blank" rel="noopener" class="font-bold text-brand-700 hover:underline flex items-center gap-1.5"><i class="fa-brands fa-facebook text-blue-600 text-lg"></i> Mardochée musa</a>
+    </div>
+   </div>
+   <div class="relative flex justify-center">
+    <div class="w-full max-w-lg relative">
+     <div class="absolute -top-6 -left-6 w-72 h-72 bg-brand-500/20 rounded-full blur-3xl"></div>
+     <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-gold-500/20 rounded-full blur-3xl"></div>
+     <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/60 bg-white">
+      <img src="images/ecole-facade.jpg" alt="Façade du Complexe Scolaire La Colombe" class="w-full h-[450px] object-cover" fetchpriority="high">
+      <div class="absolute top-6 right-6 glass-panel p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+       <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center"><img src="images/logo-colombe.png" alt="" class="w-10 h-10 object-contain"></div>
+       <div><p class="text-xs text-slate-500">Notre école</p><p class="text-sm font-bold text-slate-900">C.S. La Colombe</p></div>
+      </div>
+      <div class="absolute bottom-6 left-6 right-6 sm:right-auto dark-glass p-4 rounded-2xl shadow-xl flex items-center gap-4 text-white">
+       <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center shrink-0"><i class="fa-solid fa-user-nurse"></i></div>
+       <div><p class="text-xs text-slate-300">Section santé</p><p class="text-sm font-bold">Inscriptions ITM ouvertes</p></div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Présentation -->
+<section id="about" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+  <div class="space-y-6">
+   <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Un cadre éducatif moderne, rigoureux et stimulant</h2>
+   <p class="text-slate-600 leading-relaxed">Le <strong>Complexe Scolaire La Colombe</strong> est un établissement d'enseignement général, technique et médical. Il forme l'élève sur les plans intellectuel, moral et pratique.</p>
+   <p class="text-slate-600 leading-relaxed">Nous misons sur la rigueur scientifique, la pratique en atelier d'électricité et la formation aux soins de santé avec notre section <strong>ITM (Institut Technique Médical)</strong>.</p>
+   <div class="grid sm:grid-cols-2 gap-4 pt-2">
+    <div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center shrink-0"><i class="fa-solid fa-chalkboard-user"></i></div><div><h3 class="font-bold text-slate-900">Enseignants qualifiés</h3><p class="text-sm text-slate-500">Un corps professoral expérimenté et dévoué.</p></div></div>
+    <div class="flex items-start gap-3"><div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center shrink-0"><i class="fa-solid fa-flask"></i></div><div><h3 class="font-bold text-slate-900">Pratique et ateliers</h3><p class="text-sm text-slate-500">Électricité, sciences et soins en situation réelle.</p></div></div>
+   </div>
+  </div>
+  <div class="grid grid-cols-2 gap-6">
+   <div class="glass-panel p-8 rounded-3xl text-center border border-slate-100 shadow-md"><div class="text-brand-600 text-4xl font-extrabold font-heading mb-2"><span class="counter" data-target="100">0</span>%</div><p class="text-slate-600 text-sm">Engagement pour la réussite</p></div>
+   <div class="glass-panel p-8 rounded-3xl text-center border border-slate-100 shadow-md"><div class="text-gold-500 text-4xl font-extrabold font-heading mb-2"><span class="counter" data-target="4">0</span></div><p class="text-slate-600 text-sm">Niveaux : maternelle, primaire, secondaire, ITM</p></div>
+   <div class="glass-panel p-8 rounded-3xl text-center border border-slate-100 shadow-md"><div class="text-emerald-600 text-4xl font-extrabold font-heading mb-2"><span class="counter" data-target="4">0</span></div><p class="text-slate-600 text-sm">Options d'humanités</p></div>
+   <div class="glass-panel p-8 rounded-3xl text-center border border-slate-100 shadow-md"><div class="text-brand-700 text-4xl font-extrabold font-heading mb-2">ITM</div><p class="text-slate-600 text-sm">Section médicale spécialisée</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- Sections -->
+<section id="sections" class="py-20 bg-slate-100">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-3xl mx-auto mb-10">
+   <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900">Nos sections et options</h2>
+   <p class="text-slate-600 mt-3">Un parcours complet, de la petite enfance au diplôme d'État ou médical.</p>
+  </div>
+  <div class="flex flex-wrap justify-center gap-3 mb-10" role="group" aria-label="Filtrer les sections">
+   <button class="filter-btn active px-6 py-2.5 rounded-full font-medium text-sm bg-white text-slate-700 shadow-sm" data-filter="all">Toutes</button>
+   <button class="filter-btn px-6 py-2.5 rounded-full font-medium text-sm bg-white text-slate-700 shadow-sm" data-filter="maternelle">Maternelle</button>
+   <button class="filter-btn px-6 py-2.5 rounded-full font-medium text-sm bg-white text-slate-700 shadow-sm" data-filter="primaire">Primaire</button>
+   <button class="filter-btn px-6 py-2.5 rounded-full font-medium text-sm bg-white text-slate-700 shadow-sm" data-filter="secondaire">Secondaire</button>
+   <button class="filter-btn px-6 py-2.5 rounded-full font-medium text-sm bg-white text-slate-700 shadow-sm" data-filter="itm">ITM</button>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="maternelle"><img src="images/maternelle.jpg" alt="Photo maternelle" loading="lazy" onerror="this.remove()" class="w-full h-44 object-cover rounded-xl mb-4"><div class="w-12 h-12 rounded-xl bg-gold-400/20 text-gold-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-child-reaching"></i></div><h3 class="font-heading font-bold text-lg">Maternelle</h3><p class="text-sm text-slate-600 mt-2">Éveil, jeu et premiers apprentissages dans un cadre sécurisant.</p></article>
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="primaire"><img src="images/primaire.jpg" alt="Élèves en classe" loading="lazy" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://images.unsplash.com/photo-1473649085228-583485e6e4d7?w=800&q=80&auto=format&fit=crop'}else{this.remove()}" class="w-full h-44 object-cover rounded-xl mb-4"><div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-book-open"></i></div><h3 class="font-heading font-bold text-lg">Primaire</h3><p class="text-sm text-slate-600 mt-2">Lecture, calcul, langues et bonnes habitudes de travail.</p></article>
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="secondaire"><img src="images/humanites.jpg" alt="Photo humanites" loading="lazy" onerror="this.remove()" class="w-full h-44 object-cover rounded-xl mb-4"><img src="images/electricite.jpg" alt="Photo electricite" loading="lazy" onerror="this.remove()" class="w-full h-44 object-cover rounded-xl mb-4"><img src="images/scientifique.jpg" alt="Photo scientifique" loading="lazy" onerror="this.remove()" class="w-full h-44 object-cover rounded-xl mb-4"><div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-microscope"></i></div><h3 class="font-heading font-bold text-lg">Humanités scientifiques</h3><p class="text-sm text-slate-600 mt-2">Mathématiques, physique, chimie et biologie pour les études supérieures.</p></article>
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="secondaire"><div class="w-12 h-12 rounded-xl bg-gold-400/20 text-gold-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-bolt"></i></div><h3 class="font-heading font-bold text-lg">Électricité</h3><p class="text-sm text-slate-600 mt-2">Théorie et ateliers pratiques pour apprendre un vrai métier.</p></article>
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="secondaire"><div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div><h3 class="font-heading font-bold text-lg">Autres options d'humanités</h3><p class="text-sm text-slate-600 mt-2">Deux options supplémentaires. Demandez-nous la liste complète.</p></article>
+   <article class="card-item bg-white rounded-2xl p-6 shadow-md" data-cat="itm"><img src="images/itm.jpg" alt="Photo itm" loading="lazy" onerror="this.remove()" class="w-full h-44 object-cover rounded-xl mb-4"><div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-user-nurse"></i></div><h3 class="font-heading font-bold text-lg">ITM : Institut Technique Médical</h3><p class="text-sm text-slate-600 mt-2">Formation aux soins de santé, avec pratique encadrée.</p></article>
+  </div>
+ </div>
+</section>
+
+<!-- Atouts -->
+<section id="why-us" class="py-20 bg-white">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-12">Pourquoi choisir La Colombe ?</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   <div class="p-6 rounded-2xl bg-brand-50"><i class="fa-solid fa-scale-balanced text-brand-600 text-2xl mb-3"></i><h3 class="font-bold">Discipline</h3><p class="text-sm text-slate-600 mt-1">Des règles claires pour former des élèves responsables.</p></div>
+   <div class="p-6 rounded-2xl bg-brand-50"><i class="fa-solid fa-trophy text-gold-500 text-2xl mb-3"></i><h3 class="font-bold">Excellence</h3><p class="text-sm text-slate-600 mt-1">Un suivi régulier des résultats de chaque élève.</p></div>
+   <div class="p-6 rounded-2xl bg-brand-50"><i class="fa-solid fa-screwdriver-wrench text-brand-600 text-2xl mb-3"></i><h3 class="font-bold">Savoir-faire pratique</h3><p class="text-sm text-slate-600 mt-1">Ateliers d'électricité et pratique médicale.</p></div>
+   <div class="p-6 rounded-2xl bg-brand-50"><i class="fa-solid fa-people-roof text-gold-500 text-2xl mb-3"></i><h3 class="font-bold">Lien avec les parents</h3><p class="text-sm text-slate-600 mt-1">Une équipe joignable directement par WhatsApp.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- Galerie -->
+<section id="galerie" class="py-20 bg-slate-100">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center max-w-2xl mx-auto mb-10"><h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900">Notre école en images</h2><p class="text-slate-600 mt-3">Découvrez nos bâtiments et la vie de l'école.</p></div>
+  <div id="gal" class="grid md:grid-cols-3 gap-6">
+   <figure class="rounded-2xl overflow-hidden shadow-md bg-white md:col-span-2"><img data-lb src="images/ecole-etage.jpg" alt="Salles de classe à l'étage" loading="lazy" class="w-full h-72 md:h-96 object-cover"><figcaption class="p-3 text-sm text-slate-600">Nos salles de classe lumineuses</figcaption></figure>
+   <figure class="rounded-2xl overflow-hidden shadow-md bg-white row-span-1"><img data-lb src="images/inscriptions.jpg" alt="Accueil des parents lors des inscriptions" loading="lazy" class="w-full h-72 md:h-96 object-cover object-top"><figcaption class="p-3 text-sm text-slate-600">Accueil des parents à l'inscription</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<!-- Inscription -->
+<section id="inscription" class="py-20 bg-brand-900 text-white">
+ <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <h2 class="font-heading text-3xl sm:text-4xl font-bold">Inscrivez votre enfant en 3 étapes</h2>
+  <ol class="grid sm:grid-cols-3 gap-4 mt-8 text-left text-sm">
+   <li class="dark-glass rounded-2xl p-5"><b class="text-gold-400">1. Écrivez-nous</b><br>Envoyez un message WhatsApp avec le nom et la classe souhaitée.</li>
+   <li class="dark-glass rounded-2xl p-5"><b class="text-gold-400">2. Recevez les détails</b><br>Nous vous indiquons les documents et les frais.</li>
+   <li class="dark-glass rounded-2xl p-5"><b class="text-gold-400">3. Passez à l'école</b><br>Finalisez le dossier sur place avec la direction.</li>
+  </ol>
+  <a href="https://wa.me/243975701869?text=Bonjour,%20je%20souhaite%20inscrire%20mon%20enfant." target="_blank" rel="noopener" class="inline-flex mt-8 bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-xl font-bold items-center gap-3"><i class="fa-brands fa-whatsapp text-2xl"></i> Commencer sur WhatsApp</a>
+ </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-slate-100">
+ <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+  <div class="space-y-5">
+   <h2 class="font-heading text-3xl sm:text-4xl font-bold text-slate-900">Contactez-nous</h2>
+   <p class="text-slate-600">Une question sur les inscriptions, les frais ou les options ? Écrivez-nous, nous répondons rapidement.</p>
+   <a href="https://wa.me/243975701869?text=Bonjour%20Complexe%20Scolaire%20La%20Colombe,%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener" class="flex items-center gap-4 bg-white rounded-2xl p-4 shadow hover:shadow-lg"><span class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl"><i class="fa-brands fa-whatsapp"></i></span><span><b class="block">WhatsApp</b><span class="text-slate-600 text-sm">+243 975 701 869 (touchez pour discuter)</span></span></a>
+   <a href="mailto:cslacolombe10@gmail.com" class="flex items-center gap-4 bg-white rounded-2xl p-4 shadow hover:shadow-lg"><span class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl"><i class="fa-solid fa-envelope"></i></span><span><b class="block">E-mail</b><span class="text-slate-600 text-sm">cslacolombe10@gmail.com</span></span></a>
+   <a href="https://www.facebook.com/search/top?q=Mardoch%C3%A9e%20musa" target="_blank" rel="noopener" class="flex items-center gap-4 bg-white rounded-2xl p-4 shadow hover:shadow-lg"><span class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl"><i class="fa-brands fa-facebook"></i></span><span><b class="block">Facebook</b><span class="text-slate-600 text-sm">Mardochée musa</span></span></a>
+  </div>
+  <form id="contact-form" class="bg-white rounded-3xl p-6 sm:p-8 shadow-lg space-y-4">
+   <h3 class="font-heading font-bold text-xl">Envoyez-nous un message</h3>
+   <div><label for="nom" class="block text-sm font-medium mb-1">Votre nom</label><input id="nom" required class="w-full border border-slate-300 rounded-xl px-4 py-3" autocomplete="name"></div>
+   <div><label for="niveau" class="block text-sm font-medium mb-1">Section souhaitée</label><select id="niveau" class="w-full border border-slate-300 rounded-xl px-4 py-3 bg-white"><option>Maternelle</option><option>Primaire</option><option>Secondaire (humanités)</option><option>ITM</option><option>Autre demande</option></select></div>
+   <div><label for="msg" class="block text-sm font-medium mb-1">Votre message</label><textarea id="msg" rows="4" required class="w-full border border-slate-300 rounded-xl px-4 py-3"></textarea></div>
+   <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 rounded-xl font-bold flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-xl"></i> Envoyer par WhatsApp</button>
+   <p class="text-xs text-slate-500">Le message s'ouvrira dans WhatsApp, prêt à être envoyé à l'école.</p>
+  </form>
+ </div>
+</section>
+
+<!-- Pied de page -->
+<footer class="bg-brand-900 text-slate-300 py-10 text-center text-sm">
+ <div class="font-heading font-bold text-white text-lg flex items-center justify-center gap-2"><img src="images/logo-colombe.png" alt="" class="w-7 h-7 object-contain bg-white rounded p-0.5"> Complexe Scolaire La Colombe</div>
+ <p class="mt-2">Discipline et excellence</p>
+ <p class="mt-3"><a href="mailto:cslacolombe10@gmail.com" class="hover:text-gold-400">cslacolombe10@gmail.com</a> · <a href="https://wa.me/243975701869" target="_blank" rel="noopener" class="hover:text-gold-400">+243 975 701 869</a></p>
+ <p class="mt-4 text-xs text-slate-400">Photo « élèves en classe » : Doug Linstedt / Unsplash. © <span id="year"></span> Complexe Scolaire La Colombe. Tous droits réservés.</p>
+</footer>
+
+<!-- Bouton WhatsApp flottant -->
+<a href="https://wa.me/243975701869?text=Bonjour%20Complexe%20Scolaire%20La%20Colombe,%20je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center text-3xl shadow-2xl"><i class="fa-brands fa-whatsapp"></i></a>
+
+<div id="lb" class="hidden fixed inset-0 z-[60] bg-black/90 flex items-center justify-center p-4" role="dialog" aria-label="Photo agrandie"><button id="lb-x" class="absolute top-4 right-4 text-white text-3xl w-12 h-12" aria-label="Fermer">&times;</button><img id="lb-img" alt="" class="max-h-full max-w-full rounded-xl"></div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const btn=$('#menu-btn'),menu=$('#mobile-menu');
+btn.onclick=()=>{const o=menu.classList.toggle('hidden');btn.setAttribute('aria-expanded',!o)};
+$$('.m-link').forEach(a=>a.onclick=()=>{menu.classList.add('hidden');btn.setAttribute('aria-expanded','false')});
+$$('.filter-btn').forEach(b=>b.onclick=()=>{
+ $$('.filter-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+ const f=b.dataset.filter;
+ $$('.card-item').forEach(c=>c.classList.toggle('hidden-card',f!=='all'&&c.dataset.cat!==f));
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+ if(!e.isIntersecting)return;io.unobserve(e.target);
+ const el=e.target,t=+el.dataset.target;let n=0;
+ const id=setInterval(()=>{n+=Math.max(1,Math.ceil(t/40));if(n>=t){n=t;clearInterval(id)}el.textContent=n},30);
+}),{threshold:.5});
+$$('.counter').forEach(c=>io.observe(c));
+$('#contact-form').onsubmit=e=>{
+ e.preventDefault();
+ const t=`Bonjour Complexe Scolaire La Colombe,\nNom : ${$('#nom').value}\nSection : ${$('#niveau').value}\nMessage : ${$('#msg').value}`;
+ window.open('https://wa.me/243975701869?text='+encodeURIComponent(t),'_blank');
+};
+
+/* Galerie : ajoutez images/galerie-1.jpg ... galerie-8.jpg et elles apparaissent seules */
+const gal=$('#gal'),lb=$('#lb'),lbi=$('#lb-img');
+const openLb=s=>{lbi.src=s;lb.classList.remove('hidden')};
+gal.addEventListener('click',e=>{if(e.target.matches('img'))openLb(e.target.src)});
+lb.onclick=()=>lb.classList.add('hidden');
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.add('hidden')});
+for(let i=1;i<=8;i++){const im=new Image();im.src='images/galerie-'+i+'.jpg';
+ im.onload=()=>{const f=document.createElement('figure');f.className='rounded-2xl overflow-hidden shadow-md bg-white';
+  im.loading='lazy';im.alt='Photo de la formation '+i;im.className='w-full h-72 object-cover cursor-zoom-in';f.appendChild(im);gal.appendChild(f)}}
+$('#year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

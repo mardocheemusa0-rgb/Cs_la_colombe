@@ -1,0 +1,9 @@
+Ajoutez vos photos dans ce dossier (format .jpg, largeur 1200 px conseillée) :
+
+Photos des sections (affichées en haut de chaque carte) :
+maternelle.jpg, primaire.jpg, scientifique.jpg, electricite.jpg, humanites.jpg, itm.jpg
+
+Galerie « Notre école en images » (jusqu'à 8 photos) :
+galerie-1.jpg, galerie-2.jpg ... galerie-8.jpg
+
+Rien d'autre à modifier : les photos apparaissent automatiquement.
